@@ -1,0 +1,12 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.cart-container{
+    background-color: rgba(0, 174, 255, 0.3);
+}
+@media screen and (max-width:1100px) {
+    .products-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

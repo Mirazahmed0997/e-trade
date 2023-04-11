@@ -1,0 +1,20 @@
+.cart{
+    position: sticky;
+    top: 0;
+    padding: 30px 20px;
+}
+.clr-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+.clr-icon{
+    width: 10px;
+    margin-left: 5px;
+    color: rgba(165, 42, 42, 0.555);
+}
+.clr-icon:hover{
+    color: rgba(255, 217, 0, 0.616);
+    cursor: pointer;
+}

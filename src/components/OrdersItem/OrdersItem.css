@@ -1,0 +1,38 @@
+.orderItem img{
+    width: 91px;
+    border: 2px solid rgba(128, 128, 128, 0.616);
+}
+.order-detail-container{
+    display: flex;
+    align-items: center;
+    margin-left: 17px;
+    width: 100%;
+    justify-content: space-between;
+}
+.orderItem{
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    width: 570px;
+    margin: 21px auto;
+    padding: 8px;
+    border-radius: 10px;
+}
+.order-detail p{
+    margin: 0%;
+}
+.dlt-icon{
+    font-size: 31px;
+    color: rgba(255, 0, 0, 0.555);
+}
+.dlt-btn{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    background-color: rgba(165, 42, 42, 0.123);
+}
+.dlt-btn :hover{
+    background-color: rgba(255, 217, 0, 0.616);
+    cursor: pointer;
+}
