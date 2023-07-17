@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
+import './Order.css';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import OrdersItem from '../OrdersItem/OrdersItem';
@@ -32,7 +33,15 @@ const Order = () => {
                 }
             </div>
             <div className='cart-container'>
-                    <Cart clearCart={clearCart} cart={cart}></Cart>
+                    <div>
+                    <Cart clearCart={clearCart} cart={cart}>
+                    </Cart>
+                    </div>  
+                    <div>
+                    <Link to='/proceed' >
+                    <button className='proceed-btn'>Proceed Shiping</button>
+                    </Link> 
+                    </div>       
             </div>
 
         </div>
