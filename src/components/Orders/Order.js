@@ -13,7 +13,7 @@ const Order = () => {
     
     const handleremoveItem=(id)=>
     {
-        const remainingProducts=cart.filter(product=>product.id!==id)
+        const remainingProducts=cart.filter(product=>product._id!==id)
         setCart(remainingProducts)
         removeFromDb(id)
     }
@@ -25,7 +25,7 @@ const Order = () => {
         <div className='shop-container'>
             <div className='orders-container'>
                 {
-                    cart.map(product=><OrdersItem key={product.id} product={product} handleremoveItem={handleremoveItem}
+                    cart.map(product=><OrdersItem key={product._id} product={product} handleremoveItem={handleremoveItem}
                     ></OrdersItem>)
                 }
                 {
