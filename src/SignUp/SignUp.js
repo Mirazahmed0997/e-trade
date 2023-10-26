@@ -16,6 +16,7 @@ const SignUp = () => {
     {
         event.preventDefault();
         const form=event.target
+        const name=form.name.value
         const email=form.email.value
         const password=form.password.value
         const confirm=form.confirm.value
@@ -35,6 +36,9 @@ const SignUp = () => {
             {
                 const user=result.user;
                 console.log(user)
+                const userInfo={
+                    displayName:name
+                }
                 form.reset();
                 varifyEmail()
                 setSuccess(true)
@@ -61,6 +65,10 @@ const SignUp = () => {
         <form onSubmit={handleSubmit} className='form-container'>
         <h1 className='form-title'>Sign up</h1>
         <div >
+        <div className="form-control">
+                <label htmlFor='text'>Name</label>
+                <input type='text' name='name' id='' required></input>
+            </div>
             <div className="form-control">
                 <label htmlFor='email'>Email</label>
                 <input type='email' name='email' id='' required></input>
@@ -78,7 +86,7 @@ const SignUp = () => {
             <input className='btn-submit' type='submit' value='sign up'></input>
 
         </div>
-        <p>Already have an account?<Link to='/login'>Login</Link></p>
+        <p>Already have an account?<Link  className='text-red-600 font-bold' to='/login'>Login</Link></p>
         {
             success?<small className='text-success'>User successfully created</small>:
             <small className='text-error'>{error}</small> 

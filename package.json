@@ -43,6 +43,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "daisyui": "^3.7.5",
+    "gh-pages": "^5.0.0",
+    "tailwindcss": "^3.3.3"
   }
 }

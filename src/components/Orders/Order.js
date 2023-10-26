@@ -29,7 +29,7 @@ const Order = () => {
                     ></OrdersItem>)
                 }
                 {
-                    cart.length===0 && <h2>No order item . Please <Link to='/'>Shop more</Link></h2>
+                    cart.length===0 && <h2 className='font-semibold'>No order item . Please click here to <Link className='font-bold text-orange-600' to='/shop'>"Shop more"</Link></h2>
                 }
             </div>
             <div className='cart-container'>
@@ -39,7 +39,7 @@ const Order = () => {
                     </div>  
                     <div>
                     <Link to='/proceed' >
-                    <button className='proceed-btn'>Proceed Shiping</button>
+                    <button className='btn proceed-btn'>Proceed Shiping</button>
                     </Link> 
                     </div>       
             </div>

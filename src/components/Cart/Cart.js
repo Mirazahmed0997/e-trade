@@ -26,8 +26,8 @@ const Cart = (props) => {
             <p>Total price: {total} TK</p>
             <p>Total Shipping: {shipping} TK</p>
             <p>Tax: {tax} <small>(10%)</small></p>
-            <h5>Grand Total: {grandTotal.toFixed(2)} TK</h5>
-            <button className='clr-btn' onClick={clearCart}><p>Clear Cart</p><FontAwesomeIcon className='clr-icon' icon={faTrashCan}></FontAwesomeIcon></button>
+            <h5>Grand Total: {grandTotal.toFixed(2)} TK</h5><br></br>
+            <button className='btn' onClick={clearCart}><p>Clear Cart</p><FontAwesomeIcon className='clr-icon' icon={faTrashCan}></FontAwesomeIcon></button>
         </div>
 
      </div>
